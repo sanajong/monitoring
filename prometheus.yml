@@ -6,10 +6,3 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9100']
 
-  - job_name: 'all-droplets'
-    static_configs:
-      - targets:
-          - '10.10.10.11:9100'  # web
-          - '10.10.10.12:9100'  # postgres
-          - '10.10.10.13:9100'  # mariadb
-          - '10.10.10.14:9100'  # valkey
