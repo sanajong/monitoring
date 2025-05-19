@@ -21,7 +21,7 @@ services:
     image: fluent/fluent-bit:latest
     container_name: fluentbit
     volumes:
-      - ./fluent-bit/fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf
+      - ./fluent-bit/:/fluent-bit/etc/
     restart: unless-stopped
 
   opensearch:
